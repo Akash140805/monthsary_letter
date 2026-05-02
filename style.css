@@ -275,7 +275,7 @@ body::before {
     height: 100%;
 
     pointer-events: none;
-    z-index: 2;
+    z-index: 0;
 }
 
 /* individual hearts */
@@ -398,7 +398,7 @@ body::before {
     overflow-y: auto;   /* 🔥 scrolling fixed */
     overflow-x: hidden;
 
-    z-index: 10;
+    z-index: 20;
 }
 
 .letter p {
@@ -545,6 +545,7 @@ body.open .rewind-btn {
     /* Fix floating hearts visibility */
     .floating-hearts span {
         font-size: 18px;
+        opacity: 0.25;
     }
 
     /* Buttons always visible */
