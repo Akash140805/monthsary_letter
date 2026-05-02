@@ -563,3 +563,13 @@ body.open .rewind-btn {
         left: 15px;
     }
 }
+
+.particles,
+.particles::before,
+.particles::after,
+.floating-hearts,
+.silhouette-wrapper,
+.silhouette,
+.silhouette-glow {
+    pointer-events: none !important;
+}
