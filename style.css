@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* 🌸 DREAMY BACKGROUND */
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +24,7 @@ body {
         #eaa0b2 100%
     );
 
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* soft blur glow */
@@ -511,4 +516,50 @@ body.open .rewind-btn {
 /* increase duration */
 .heart-burst span {
     animation: burst 2s ease forwards;
+}
+
+@media (max-width: 768px) {
+
+    /* Title fix */
+    .title {
+        font-size: 28px;
+        top: 20px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    /* Envelope scaling */
+    .envelope {
+        transform: scale(0.8);
+    }
+
+    /* Letter open state fix */
+    .envelope.open .letter {
+        width: 90vw !important;
+        height: 70vh !important;
+        padding: 20px !important;
+
+        transform: translate(-50%, -30%) !important;
+    }
+
+    /* Fix floating hearts visibility */
+    .floating-hearts span {
+        font-size: 18px;
+    }
+
+    /* Buttons always visible */
+    .music-toggle,
+    .rewind-btn {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+    }
+
+    .music-toggle {
+        right: 15px;
+    }
+
+    .rewind-btn {
+        left: 15px;
+    }
 }
