@@ -545,8 +545,16 @@ body.open .rewind-btn {
     /* Fix floating hearts visibility */
     .floating-hearts span {
         font-size: 18px;
-        opacity: 0.25;
     }
+
+    .silhouette {
+    transform: scale(0.6);
+    transform-origin: center;
+}
+
+.silhouette-glow {
+    transform: translate(-50%, -50%) scale(0.6);
+}
 
     /* Buttons always visible */
     .music-toggle,
